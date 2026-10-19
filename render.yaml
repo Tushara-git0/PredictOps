@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: predictops-cloudops
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: CLOUD_MODE
+        value: local
+      - key: APP_ENV
+        value: production
+      - key: ADMIN_API_TOKEN
+        generateValue: true
+      - key: PYTHON_VERSION
+        value: 3.12.10

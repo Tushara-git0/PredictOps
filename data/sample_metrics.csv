@@ -1,0 +1,4 @@
+timestamp,cpu,memory,latency_ms,requests_per_min,error_rate,db_connections
+2026-10-18T10:00:00Z,45,58,140,310,0.4,42
+2026-10-18T10:05:00Z,52,62,175,390,0.5,48
+2026-10-18T10:10:00Z,91,78,330,720,4.2,94
